@@ -1,0 +1,203 @@
+:root {
+    --color-uno: #1b435d;
+    --color-dos: #1089ff;
+    --color-tres: #e5e5e5;
+    --color-cuatro: #ff895d;
+    --color-cinco: #78bbe6;
+    --color-seis: #32424a;
+    --color-siete: #222831;
+    --fuente-uno: "Bitter", serif;
+    --fuente-dos: "Baloo Bhaijaan 2", cursive;
+    --fuente-tres: "Alice", serif;
+}
+html{
+    font-family: var(--fuente-dos);
+}
+.espacio-e-seccion {
+    margin-top: 0%;
+}
+header {
+    background-color: var(--color-siete);
+    color: var(--color-tres);
+    height: 7vh;
+    margin: 0px;
+    width: 100%;
+}
+#barra_nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2%;
+    width: 100%;
+}
+#btns_nav {
+    align-items: center;
+    background-color: var(--color-seis);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    top: 12vh;
+    width: 100%;
+    z-index: 1;
+}
+.btn_estilo {
+    background-color: #32424a;
+    border: 1px solid #1089ff;
+    border-radius: 10px;
+    margin-top: 3px;
+    padding: 1px;
+    text-align: center;
+    width: 80%;
+}
+.a_nav_link {
+    background: none;
+    color: var(--color-tres);
+    text-decoration: none;
+}
+.a_nav_link:hover {
+    background: none;
+    color: var(--color-cinco);
+    text-decoration: none;
+}
+#btn_burger {
+    background-color: var(--color-seis);
+    border: solid 1px;
+    color: var(--color-tres);
+    padding-top: 3px;
+    text-align: center;
+}
+#btn_cerrar_nav {
+    border: none;
+}
+#portada {
+    align-items: flex-end;
+    background: url(../img/portada.jpg) center fixed;
+    background-size: cover;
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    width: 100%;
+}
+#foto_perfil{
+    border: 1px solid var(--color-siete);
+    border-radius: 50%;
+    height: 150px;
+    outline: 1px solid var(--color-dos);
+    position: relative;
+    top: 7vh;
+    width: 150px;
+}
+#datos_personales{
+    align-items: center;
+    background-color: var(--color-cinco);
+    color: var(--color-siete);
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+}
+#presentacion{
+    font-size: 13px;
+}
+.datos_estilo{
+    margin-top: -2px;
+}
+h2{
+    font-family: var(--fuente-tres);
+}
+h3{
+    font-size: 15px;
+}
+#estudios{
+    background-color: var(--color-tres);
+    color: var(--color-siete);
+    padding: 10%;
+}
+#exp_laboral{
+    background-color: var(--color-cinco);
+    color: var(--color-siete);
+    padding: 10%;
+}
+.contenedor{
+    font-size: small;
+    padding: 5px;
+}
+.titulo_formacion, .titulo_trabajo{
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.anios_formacion, .lugar_formacion, .lugar_trabajo, .anios_trabajo{
+    margin-block: 0px;
+}
+#formulario_de_contacto{
+    background-color: var(--color-tres);
+    color: var(--color-siete);
+    padding: 10%;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+}
+#formulario>p{
+    font-size: small;
+    margin-top: 0px;
+}
+input, textarea{
+    border: 1px solid var(--color-uno);
+    border-radius: 10px;
+    color: var(--color-uno);
+}
+input:hover, textarea:hover{
+    border: 2px solid var(--color-cuatro);
+    outline: 0 none;
+}
+input:focus, textarea:focus{
+    border: 2px solid var(--color-cuatro);
+    outline: 0 none;
+}
+#btn_enviar{
+    background-color: var(--color-uno);
+    border: 1px solid var(--color-seis);
+    border-radius: 10px;
+    color: var(--color-tres);
+    margin-top: 10px;
+}
+footer{
+    background-color: var(--color-uno);
+    height: 5vh;
+    width: 100%;
+}
+@media only screen and (min-width: 999.99px) {
+    header{
+    height: 10vh;
+    }
+    #btn_burger {
+    display: none;
+    }
+    #btns_nav {
+    align-items: center;
+    background-color: transparent;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    width: 100vh;
+}
+.btn_estilo{
+    margin-inline: 2vh;
+    }
+    #foto_perfil {
+        height: 250px;
+        top: 5vh;
+        width: 250px;
+}
+.espacio-e-seccion{
+    text-align: center;
+}
+
+}

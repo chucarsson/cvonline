@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Online</title>
+    <link rel="icon" href="./img/logo2.png" type="image/png" />
+    <meta
+    name="description"
+    content="CV Online para curso Front-end de Ticmas y Argentina Programa"
+    />
+    <meta
+    name="keywords"
+    content="CV, Curriculum, Ticmas, Argentina Programa"
+    />
+    <meta name="author" content="Agustín Dell'Acqua" />
+    <meta name="copyright" content="Agustín Dell'Acqua 2023" />
+    <!--Meta datos para FB y Twitter-->
+    <meta property="og:image" content="./img/logo2.png" />
+    <meta property="og:title" content="Cv Online" />
+    <meta
+    property="og:description"
+    content="CV Online para curso Front-end de Ticmas y Argentina Programa"
+    />
+    <meta property="og:type" content="Cv Online Ticmas-Argentina Programa" />
+    <meta property="og:url" content="..." />
+    <meta property="twitter:image" content="./img/logo2.png" />
+    <meta property="twitter:title" content="Cv Online" />
+    <meta
+    property="twitter:description"
+    content="CV Online para curso Front-end de Ticmas y Argentina Programa"
+    />
+    <meta property="twitter:type" content="Cv Online Ticmas-Argentina Programa" />
+    <meta property="twitter:url" content="..." />
+    <!--Robots-->
+    <meta name="robots" content="index" />
+    <meta name="robots" content="follow" />
+    <!--Estilos & Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Alice&family=Baloo+Bhaijaan+2:wght@400;700&family=Bitter:wght@400;700&display=swap"
+    rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/e804f5677a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <header id="header">
+        <nav id="barra_nav">
+            <button id="btn_burger"><i class="fa-solid fa-bars"></i></button>
+            <ul id="btns_nav">
+                <li id="btn_data" class="btn_estilo"><a class="a_nav_link" href="#datos_personales">¿Quién Soy?</a></li>
+                <li id="btn_estudios" class="btn_estilo"><a class="a_nav_link" href="#estudios">Estudios</a></li>
+                <li id="btn_laboral" class="btn_estilo"><a class="a_nav_link" href="#exp_laboral">Experiencia Laboral</a></li>
+                <li id="btn_contacto" class="btn_estilo"><a class="a_nav_link" href="#formulario_de_contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="portada">
+    <div id="perfil"><img src="./img/fotoperfil1.png" alt="foto de perfil" id="foto_perfil"></div>
+</section>
+<section id="datos_personales" class="espacio-e-seccion">
+    <h2 id="nombreapellido">Carlos Gonzalez</h2>
+    <p id="presentacion" class="datos_estilo">Programador Back-end Jr</p>
+    <h3 id="nacimiento" class="datos_estilo"><i class="fa-solid fa-cake-candles"></i></i> 15/4/1991</h3>
+    <h3 id="ubicacion" class="datos_estilo"><i class="fa-solid fa-location-dot"></i> General Pico, La Pampa, Argentina</h3>
+    <h3 id="direccion" class="datos_estilo"><i class="fa-solid fa-house"></i> San Martín 246</h3>
+    <h3 id="celular" class="datos_estilo"><i class="fa-solid fa-phone"></i> (2302)458721</h3>
+    <h3 id="correo_e" class="datos_estilo"><i class="fa-solid fa-envelope"></i> carlosgonzalez1991@correo.com</h3>
+</section>
+<section id="estudios" class="espacio-e-seccion">
+    <h2>Estudios</h2>
+    <div id="formaciones">
+        <div id="estudio1" class="contenedor">
+            <h3 class="titulo_formacion">Diplomatura en Programación Java</h3>
+            <h5 class="lugar_formacion">Universidad Tecnológica Nacional</h5>
+            <p class="anios_formacion">2021</p>
+        </div>
+        <div id="estudio2" class="contenedor">
+            <h3 class="titulo_formacion">Curso de Java Inicial</h3>
+            <h5 class="lugar_formacion">Coderhouse</h5>
+            <p class="anios_formacion">2020</p>
+        </div>
+        <div id="estudio3" class="contenedor">
+            <h3 class="titulo_formacion">Técnicatura en Programación</h3>
+            <h5 class="lugar_formacion">Universidad Tecnológica Nacional</h5>
+            <p class="anios_formacion">2018 - 2020</p>
+        </div>
+    </div>
+</section>
+<section id="exp_laboral" class="espacio-e-seccion">
+    <h2>Experiencia Laboral</h2>
+    <div id="trabajos" class="contenedor">
+        <div id="trabajo1">
+            <h3 class="titulo_trabajo">Programador Java jr</h3>
+            <h5 class="lugar_trabajo">Globant</h5>
+            <p class="anios_trabajo">2021 - actualidad</p>
+        </div>
+    </div>
+</section>
+<section id="formulario_de_contacto" class="espacio-e-seccion">
+    <div id="formulario">
+        <h3>Dejame tu mensaje</h3>
+        <p>Todos los campos son obligatorios</p>
+        <label for="input_nombre" class="indicaciones-input">Nombre</label>
+        <input type="text" name="Nombre y Apellido" placeholder="Colocá tu Nombre y Apellido" id="input_nombre">
+        <label for="input_correoe" class="indicaciones-input">Email</label>
+        <input type="email" name="Correo Electronico" id="input_correoe" placeholder="Escribe tu correo electrónico">
+        <label for="input_tel" class="indicaciones-input">Teléfono</label>
+        <input type="tel" name="Teléfono" id="input_tel" placeholder="Escribe tu teléfono">
+        <label for="input_asunto" class="indicaciones-input">Asunto</label>
+        <input type="text" name="Asunto" id="input_asunto" placeholder="Escribe el asunto por le cuál me contactas">
+        <label for="mensaje_input" class="indicaciones-input">Mensaje</label>
+        <textarea name="Mensaje" id="mensaje_input" placeholder="Dejame tu mensaje" cols="30" rows="10"></textarea>
+        <button type="submit" id="btn_enviar">Enviar</button>
+    </div>
+</section>
+<script src="./js/main.js"></script>
+    
+</body>
+<footer>
+    
+</footer>   
+</html>
